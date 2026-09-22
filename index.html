@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaser bin naif</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <canvas id="starsCanvas"></canvas>
+
+  <div class="container">
+
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="ar">🇸🇦 عربي</button>
+      <button class="lang-btn" data-lang="en">🇬🇧 English</button>
+    </div>
+
+    <div class="avatar-wrapper">
+      <img src="avatar.png" alt="jaser bin naif" class="avatar">
+      <span class="status-dot" id="statusDot"></span>
+    </div>
+
+    <h1 class="name" id="typewriter"></h1>
+    <p class="bio">jaser_naif</p>
+
+    <p class="info">
+      <span><i class="fas fa-map-marker-alt"></i> <span data-key="location">المملكة العربية السعودية</span></span>
+      <span class="sep">·</span>
+      <span><i class="fas fa-cake-candles"></i> <span id="age">--</span> <span data-key="years">عام</span></span>
+    </p>
+
+    <div id="discord-activity" class="activity-card">
+      <div class="activity-loading">
+        <span class="dot-loader"></span>
+        <span class="dot-loader"></span>
+        <span class="dot-loader"></span>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="https://tiktok.com/@jaser_naif" target="_blank" class="link-btn">
+        <i class="fab fa-tiktok"></i>
+        <span data-key="tiktok">تيك توك</span>
+      </a>
+      <a href="https://www.snapchat.com/@jaser-naif" target="_blank" class="link-btn">
+        <i class="fab fa-snapchat"></i>
+        <span data-key="snapchat">سناب شات</span>
+      </a>
+      <a href="https://www.imdb.com/user/p.ljrfjhdfvhegjstfuvxpnz3doa/watchlist/?ref_=ext_shr_lnk" target="_blank" class="link-btn">
+        <i class="fas fa-film"></i>
+        <span data-key="watchlist">قائمة المشاهدة</span>
+      </a>
+      <a href="https://on.soundcloud.com/TjML80iaVYHWYHMQnE" target="_blank" class="link-btn">
+        <i class="fas fa-music"></i>
+        <span data-key="playlist">قائمة الأغاني</span>
+      </a>
+      <a href="https://instagram.com/jaser_naif" target="_blank" class="link-btn">
+        <i class="fab fa-instagram"></i>
+        <span data-key="instagram">إنستغرام</span>
+      </a>
+    </div>
+
+    <footer>
+      <p id="footerDate">--</p>
+    </footer>
+
+  </div>
+
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
